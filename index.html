@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="CSS/amazoncss.css">
+	<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+	<link rel="stylesheet" href="CSS/style.css">
+	
+</head>
+
+<body bgcolor="black">
+
+<div id="large">
+	<img src="Images/backgroundpng.png" id="backimage">
+
+	<div id="header">
+
+		<img src="Images/background.png" id="headeramazonimage">
+		
+
+
+	<div id="navbar">
+		<div id="logo">
+        	<img src="Images/title.png">
+        </div>
+
+        <div >
+        	<ul id="headnav">
+        		<li id="headnav1"><a href="#header"><span id="home">Home</span></a></li>
+        		<li id="headnav1"><a href="#aboutamazon">About Amazon</a></li>
+        		<li id="headnav1"><a href="#animals">Wild Life</a></li>
+        		<li id="headnav1"><a href="#form1">Get In Touch</a></li>
+        	</ul>
+        </div>
+       </div>
+
+
+          <div id="headercontent1">
+        	<img src="Images/describe.png">
+          </div>
+          <div id="login">
+        		<a href="https://www.worldwildlife.org/places/amazon"><button class="button"><span>Join Us</span></button></a>
+        	</div>
+
+             <ul class="fly-in-text hidden">
+            <li><span class="special">W</span></li>
+            <li><span class="special">E</span></li>
+            <li><span class="special">L</span></li>
+            <li>C</li>
+            <li>O</li>
+            <li>M</li>
+            <li>E</li>
+        </ul>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript">
+            
+            $(function() {
+                
+                setTimeout(function() {
+                    $('.fly-in-text').removeClass('hidden');
+                }, 500);
+                
+            })();
+            
+        </script>
+
+	</div>
+<h3 id="read"><a href="aboutamazonlast.html">Read More</a></h3>
+
+  <div id="aboutamazon">
+		<div class="w3-content w3-display-container">
+
+		<img src="Images/challenges.png" class="mySlides" id="aboutamazonimage" >
+
+		<img src="Images/aboutamazon.png" id="aboutamazonimage"  class="mySlides" >
+		<img src="Images/foodandfarming.png" class="mySlides" id="aboutamazonimage" >
+		
+		<img src="Images/location.png" class="mySlides" id="aboutamazonimage" >
+		
+		
+		  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  		  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  		</div>
+	</div>
+
+		<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+<!--animals-->
+
+	<div id="animals">
+		<div id="animalheader">
+					<div id="headertopic">
+				<h1>Wildlife that live in the Amazon</h1>
+					</div>
+				<div id="headercontentanimals">
+				<p>The Amazon river contains more than twice as many types of fish than any<br> other river – and there are hundreds of thousands of different plants and animals in the Amazon rainforest.</p>
+				</div>
+		</div>
+		<div id="animalcontent">
+				<div class="container">
+				<img src="Images/category1.png" id="animalcategory" class="image"><div class="middle"><div class="text"><a href="animals4.html">
+				Jaguars </a></div> </div></div>
+
+				<div class="container">
+				<img src="Images/category3.png" id="animalcategory" class="image"><div class="middle"><div class="text">
+				<a href="animals4.html">
+				Elephants </a> </div> </div></div>
+
+				<div class="container">
+				<img src="Images/category2.png" id="animalcategory" class="image"><div class="middle"><div class="text">
+				<a href="animals4.html">
+				Marine Turtiles</a> </div> </div></div>
+
+
+		</div>
+	</div>
+<!-- animals over-->
+
+<!--form-->
+
+	<div id="form1">
+		<div id="content">
+			<div id="contentleft">
+			<h2>Get In Touch</h2>
+			<p >Amazon Wild Life<br>Sabaragamuwa University Of sri Lanka<br>
+			076-7068361</p>
+				<div id="socialicons">
+				<img src="Images/fb.jpg" id="icon">
+				<img src="Images/icons_06.jpg" id="icon">
+				<img src="Images/icons_09.jpg" id="icon">
+				<img src="Images/icons_12.jpg" id="icon">
+			</div>
+
+			</div>
+
+			<div id="contentright">
+			<p >Sign up to get the latest WWF news about our conservation work and how you can help delivered straight to your inbox</p>
+			</div>
+		</div>
+
+		<div class ="feedback">
+			<form action="http://www.w3schools.com/css/action_page.php" id="formcontent">
+    			<label for="fname">First Name</label>
+    			<input type="text" id="fname" name="firstname"><br>
+
+   				 <label for="lname">Email </label>
+    			<input type="text" id="lname" name="lastname"><br>
+
+				<label for="fname">Feed Back</label>
+    			<input type="text" id="fname" name="firstname"><br>
+
+    			<input type="submit" value="Submit">
+
+  </form>
+		</div>
+
+	</div>
+<!--form over-->
+
+<div id="footer">
+		<p>Copyright @ 2017.Amazon Wild Life.All Right Reserved.</p>
+</div>
+
+
+</div>
+</body>
+</html>
